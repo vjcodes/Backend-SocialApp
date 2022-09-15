@@ -5,7 +5,7 @@ const res = require('express/lib/response')
 
 const app = express()
 
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT || 4000
 
 app.get('/', (req, res) => {
     res.status(200).send('<h1>Hello Worldd Fuck</h1>')
